@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bankAccountManagement", "bankAccountManagement\bankAccountManagement.csproj", "{8FA0676C-B8CF-4F7F-8845-A6A31091EFF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simpleCalculator", "simpleCalculator\simpleCalculator.csproj", "{581603D7-758A-4A10-B099-13E2F64B66F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "simpleCalculator", "simpleCalculator\simpleCalculator.csproj", "{581603D7-758A-4A10-B099-13E2F64B66F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simpleFileExplorer", "simpleFileExplorer\simpleFileExplorer.csproj", "{24357AD6-73D2-4AAB-ADB0-75FB8B5519F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{581603D7-758A-4A10-B099-13E2F64B66F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{581603D7-758A-4A10-B099-13E2F64B66F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{581603D7-758A-4A10-B099-13E2F64B66F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24357AD6-73D2-4AAB-ADB0-75FB8B5519F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24357AD6-73D2-4AAB-ADB0-75FB8B5519F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24357AD6-73D2-4AAB-ADB0-75FB8B5519F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24357AD6-73D2-4AAB-ADB0-75FB8B5519F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
