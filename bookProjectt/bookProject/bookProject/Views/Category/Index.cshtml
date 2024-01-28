@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ClassLibrary.Category>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-outline-success">Yeni Kategori Oluştur</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.categoryID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.categoryName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.categoryID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.categoryName)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.categoryID }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.categoryID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.categoryID })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
