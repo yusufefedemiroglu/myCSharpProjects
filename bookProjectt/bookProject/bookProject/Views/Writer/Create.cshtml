@@ -1,0 +1,29 @@
+﻿@model ClassLibrary.Writer
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Yazar Ekle</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">         
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="writerName" class="control-label"></label>
+                <input asp-for="writerName" class="form-control" />
+                <span asp-validation-for="writerName" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3">
+                <a asp-action="Index" class="btn btn-outline-secondary">Listeye Geri Dön</a>
+                <input type="submit" value="Oluştur" class="btn btn-outline-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
